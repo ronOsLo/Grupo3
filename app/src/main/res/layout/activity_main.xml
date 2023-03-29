@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="402dp">
+
+        <TextView
+            android:id="@+id/txtEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/contenedorBoton"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtSalida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Precione para Hablar" />
+
+        <ImageButton
+            android:id="@+id/btHablar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_microfono" />
+
+        <ImageButton
+            android:id="@+id/btParlante"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_parlante" />
+
+
+        <EditText
+            android:id="@+id/txtIngresa"
+            android:layout_width="373dp"
+            android:layout_height="222dp"
+            android:hint="Introdusca el Texto "
+            android:padding="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>
